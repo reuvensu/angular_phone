@@ -1,14 +1,15 @@
- sudo: required
- dist: trusty
+#  sudo: required
+#  dist: trusty
 
 language: node_js
 node_js:
   - '4.4'
 
-# before_script:
-#   - export DISPLAY=:99.0
-#   - sh -e /etc/init.d/xvfb start
+before_script:
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
 
+scripts: npm run test
 notifications:
   email:
     - wingromans@gmail.com
