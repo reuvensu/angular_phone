@@ -1,5 +1,5 @@
- sudo: required
- dist: trusty
+#  sudo: required
+#  dist: trusty
 
 # language: node_js
 # node_js:
@@ -19,7 +19,7 @@ language: node_js
 node_js:
   - "6"
 script: npm run test
-install: true
+install: npm run install
 notifications:
   email:
     - wingromans@gmail.com
