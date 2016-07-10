@@ -1,5 +1,5 @@
-# sudo: required
-# dist: trusty
+ sudo: required
+ dist: trusty
 
 # language: node_js
 # node_js:
@@ -18,7 +18,7 @@
 language: node_js
 node_js:
   - "6"
-script: npm run test-single-run
+script: npm run test
 install: true
 notifications:
   email:
